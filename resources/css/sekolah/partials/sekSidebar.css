@@ -1,0 +1,75 @@
+/* Sidebar container */
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* List reset */
+.sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* List items */
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+/* Sidebar links */
+.sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    color: #444;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-size: 15px;
+    font-weight: 500; /* konsisten semua link */
+    border: 2px solid transparent; /* elak gerak bila active */
+}
+
+/* Sidebar icons */
+.sidebar nav ul li a i {
+    width: 20px;       /* lock icon size supaya teks tak berganjak */
+    text-align: center;
+}
+
+/* Hover effect */
+.sidebar nav ul li a:hover {
+    background: #e6f4ea;
+    color: #2d6a4f;
+}
+
+/* Active link */
+.sidebar nav ul li a.active {
+    background: #2d6a4f;
+    color: #ffffff;
+    border: 2px solid #2d6a4f;
+    font-weight: 600; /* slightly bold tapi tak lari */
+}
+
+/* User info section */
+.user-info {
+    padding: 16px 20px;
+    border-top: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.user-info .name {
+    font-weight: 600;
+    color: #2d6a4f;
+}
+
+.user-info .role {
+    font-size: 14px;
+    color: #6b7280;
+}
+

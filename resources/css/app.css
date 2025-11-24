@@ -1,0 +1,62 @@
+/* Framework Imports */
+
+/* Bootstrap Core */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Vendor-Specific Styles */
+@import "vendor/venRegister.css";
+
+/* Tailwind CSS Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+
+/* General Body & Fonts */
+body {
+    font-family: sans-serif;
+    color: #2d3748;
+    background: linear-gradient(to bottom right, #f0fff4, #ffffff, #f0fff4);
+}
+
+/* Card Components */
+
+/* Card Shadows */
+.card-shadow {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+}
+
+.card-shadow:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Items */
+.card-item {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes floating {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-10px); 
+    }
+}
+
+.animate-floating {
+    animation: floating 3s ease-in-out infinite;
+}

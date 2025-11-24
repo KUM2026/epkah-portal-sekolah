@@ -1,0 +1,307 @@
+/* ===============================
+   Base Styles
+=============================== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d3748;
+    background: linear-gradient(to bottom right, #f0fff4, #ffffff, #f0fff4);
+    margin: 0;
+}
+
+/* ===============================
+   Layout
+=============================== */
+.main-content {
+    flex: 1;
+    padding: 28px;
+}
+
+/* ===============================
+   Welcome Card
+=============================== */
+.welcome-card {
+    background: linear-gradient(120deg, #2fb382, #10b981);
+    color: white;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+}
+.welcome-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+.welcome-card h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.welcome-card p {
+    opacity: 0.95;
+    font-size: 18px;
+}
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+.tag i {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* Button Styles */
+.btn-yellow {
+    background: linear-gradient(120deg, #facc15, #ebc017);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(250, 204, 21, 0.275);
+}
+.btn-yellow:hover {
+    background: #ebc013;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(234, 179, 8, 0.4);
+}
+.btn-blue {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+.btn-blue:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.4);
+}
+
+
+/* ===============================
+   Stats – Aesthetic Premium UI
+=============================== */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 26px;
+}
+
+/* Card */
+.stat-box {
+    background: linear-gradient(145deg, #ffffff, #f6f7f9);
+    padding: 34px;
+    border-radius: 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.35s ease;
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.05),
+        0 8px 20px rgba(0,0,0,0.03);
+}
+
+/* Hover effect (smooth lift + glow border) */
+.stat-box:hover {
+    transform: translateY(-8px);
+    border-color: rgba(16, 185, 129, 0.35);
+    box-shadow:
+        0 10px 26px rgba(16, 185, 129, 0.15),
+        0 4px 10px rgba(16, 185, 129, 0.08);
+}
+
+/* Icon bubble — WOW admin */
+.stat-box i {
+    background: linear-gradient(150deg, #ecfff7, #c6f7e2);
+    padding: 22px;
+    font-size: 32px;
+    color: #0ea567;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Glow + soft lighting */
+    box-shadow:
+        0 8px 18px rgba(16, 185, 129, 0.25),
+        0 0 22px rgba(16, 185, 129, 0.3),
+        inset -3px -3px 6px rgba(255, 255, 255, 0.6),
+        inset 3px 3px 8px rgba(0, 0, 0, 0.06);
+
+    transition: all .25s ease-in-out;
+}
+
+.stat-box i:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow:
+        0 12px 26px rgba(16, 185, 129, 0.35),
+        0 0 32px rgba(16, 185, 129, 0.4),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.7),
+        inset 3px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Value */
+.stat-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f9f6b;
+}
+
+/* Label */
+.stat-box p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 4px;
+    letter-spacing: 0.4px;
+}
+
+/* Card hover effect (lift + glow) */
+.stat-box:hover {
+    transform: translateY(-6px) scale(1.03);
+    border-color: rgba(16, 185, 129, 0.25);
+    box-shadow:
+        0 10px 24px rgba(16, 185, 129, 0.15),
+        0 4px 12px rgba(16, 185, 129, 0.08);
+}
+
+
+
+/* ===============================
+   Table Section
+=============================== */
+.table-section {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    margin-top: 40px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+}
+.table-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+.table-section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #111827;
+    font-weight: 600;
+}
+.table-wrapper {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: center;
+}
+thead {
+    background: #f9fafb;
+    font-weight: 600;
+}
+tbody tr:hover {
+    background: #f3f4f6;
+    transition: background 0.3s ease;
+}
+.resit-img {
+    height: 42px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+.resit-img:hover {
+    transform: scale(1.5);
+}
+.status.success {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* ===============================
+   Daily Tip
+=============================== */
+.daily-tip {
+    margin-top: 1.5rem;
+    background: #f9fafb;
+    border-left: 5px solid #10b981;
+    padding: 14px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #374151;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.daily-tip i {
+    color: #059669;
+    font-size: 16px;
+}
+
+/* ===============================
+   Animations
+=============================== */
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ...existing code... */
+
+.action-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    border-radius:10px;
+    color:#fff;
+    box-shadow: 0 8px 18px rgba(2,6,23,0.06);
+    transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 0;
+    padding: 0;
+}
+
+.action-btn i{ font-size:16px; }
+
+/* Hover / focus */
+.action-btn:focus{ outline:3px solid rgba(255,255,255,0.12); outline-offset:2px; }
+.action-btn:hover{ transform: translateY(-3px); box-shadow: 0 14px 28px rgba(2,6,23,0.12); }
+
+/* Variant safety for contrast */
+.action-btn.bg-yellow-500{ color:#163a0b; } /* darker text on yellow */
+.action-btn.bg-red-500{ color:#fff; }
+
+/* Small responsive tweak */
+@media (max-width:640px){
+    .action-btn{ width:34px; height:34px; font-size:14px; }
+}
+
+/* ...existing code... */
