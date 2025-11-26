@@ -1,0 +1,209 @@
+/* ===========================
+   Page Background
+=========================== */
+.register-page {
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    align-items: flex-start; /* penting supaya form panjang tak terpotong */
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #ecfdf5, #ffffff, #d1fae5);
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Card
+=========================== */
+.register-card {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    overflow: visible;
+    animation: fadeSlide 0.8s ease-out forwards;
+}
+
+/* ===========================
+   Header
+=========================== */
+.register-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid #bbf7d0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.register-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #047857;
+    margin-top: 1rem;
+}
+
+.register-subtitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* ===========================
+   Form
+=========================== */
+.register-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.register-form label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 0.5rem;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    background-color: #f0fdf4;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 2px #a7f3d0;
+}
+
+.register-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* ===========================
+   Password toggle
+=========================== */
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+.register-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(to right, #10b981, #047857);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(16,185,129,0.3);
+}
+
+/* ===========================
+   Animations
+=========================== */
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   Hidden fields
+=========================== */
+.hidden {
+    display: none;
+}
+
+/* ===========================
+   School/Bank Address sections
+=========================== */
+.register-card .p-4 {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Flex fields (Bandar + Negeri) */
+.register-card .flex.gap-4 > .form-group {
+    flex: 1;
+}
+
+/* ===========================
+   Checkboxes
+=========================== */
+.register-form input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+    .register-card {
+        padding: 2rem 1.5rem;
+    }
+    .register-title {
+        font-size: 1.5rem;
+    }
+    .register-subtitle {
+        font-size: 0.8rem;
+    }
+}
+.social-login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-login a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

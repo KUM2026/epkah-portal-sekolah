@@ -1,0 +1,82 @@
+/* Footer Custom Styles - Aesthetic Version */
+.footer-logo {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 6px 16px rgba(34,197,94,0.25), 0 2px 8px rgba(0,0,0,0.10);
+    border: 2px solid #bbf7d0; /* Tailwind green-200 */
+    background: linear-gradient(135deg, #bbf7d0 0%, #f0fdf4 100%);
+    object-fit: cover;
+}
+
+.footer-title {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    color: #166534; /* Tailwind green-800 */
+}
+
+.footer-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e0f2fe; /* Tailwind sky-100 */
+    margin-bottom: 1.5rem;
+}
+
+.footer-subtitle {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: #facc15; /* Tailwind yellow-300 */
+    letter-spacing: 0.5px;
+}
+
+.footer-list,
+.footer-contact,
+.footer-stats {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.2rem;
+}
+
+.footer-list li,
+.footer-contact li,
+.footer-stats li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-list li a,
+.footer-contact li a {
+    transition: color 0.3s, text-decoration 0.3s;
+    color: #f3f4f6; /* Tailwind gray-100 */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-list li a:hover,
+.footer-contact li a:hover {
+    color: #facc15; /* Tailwind yellow-300 */
+    text-decoration: underline;
+}
+
+.footer-contact li span,
+.footer-stats li span {
+    font-weight: 700;
+    color: #bbf7d0; /* Tailwind green-200 */
+    background: rgba(22,101,52,0.08);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    color: #bbf7d0;
+    letter-spacing: 0.5px;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #bbf7d0;
+    background: linear-gradient(90deg, #166534 0%, #22c55e 100%);
+}
